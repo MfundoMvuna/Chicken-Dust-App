@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Chicken-Dust-App.props" />
+</Project>

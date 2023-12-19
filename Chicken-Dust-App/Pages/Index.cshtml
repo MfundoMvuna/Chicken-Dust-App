@@ -1,0 +1,95 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Chicken Ordering";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="text-center">
+        <header class="banner">
+            <h1>Welcome to Chicken Ordering</h1>
+        </header>
+
+        <main>
+    <h2>Select your chicken:</h2>
+    <div class="product-cards">
+        <div class="product-card">
+            <div class="card-image">
+                <!-- Image for Quarter Chicken -->
+                <img src="path_to_quarter_chicken_image.jpg" alt="Quarter Chicken">
+            </div>
+            <div class="card-description">
+                <h3>Quarter Chicken - Hot Sauce</h3>
+                <button onclick="showProductDetails('Quarter', 'Hot')">Select</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-image">
+                <!-- Image for Half Chicken -->
+                <img src="path_to_half_chicken_image.jpg" alt="Half Chicken">
+            </div>
+            <div class="card-description">
+                <h3>Half Chicken - BBQ Sauce</h3>
+                <button onclick="showProductDetails('Half', 'BBQ')">Select</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-image">
+                <!-- Image for Half Chicken -->
+                <img src="path_to_half_chicken_image.jpg" alt="Full Chicken">
+            </div>
+            <div class="card-description">
+                <h3>Half Chicken - BBQ Sauce</h3>
+                <button onclick="showProductDetails('Full', 'BBQ')">Select</button>
+            </div>
+        </div>
+        <!-- Add more product cards as needed -->
+    </div>
+</main>
+
+
+        <!-- Modal -->
+        <div class="modal" id="orderModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Product Details</h2>
+                <!-- Product details will be displayed here -->
+                <p>Selected: <span id="selectedProduct"></span></p>
+                <button onclick="proceedToCheckout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showProductDetails(type, sauce) {
+            // Update the modal content with selected product details
+            const selectedProduct = `${type} - ${sauce} Sauce`;
+            document.getElementById('selectedProduct').innerText = selectedProduct;
+            
+            // Show the modal
+            document.getElementById('orderModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            // Hide the modal
+            document.getElementById('orderModal').style.display = 'none';
+        }
+
+        function proceedToCheckout() {
+            // Implement logic to proceed to checkout here
+            // This function can redirect to the checkout page or perform necessary actions
+            alert('Redirecting to checkout!');
+        }
+    </script>
+</body>
+</html>
