@@ -147,3 +147,22 @@ main {
 .product-card {
   margin: auto;
 }
+
+
+/* CSS for the modal text */
+.modal-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Adjust font weight as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #333; /* Adjust font color as needed */
+    /* Add any other styles you want for the text */
+}
+
+/* CSS for the sauce options */
+.sauce-options label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Adjust font weight as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    /* Add any other styles you want for the sauce options */
+}
+

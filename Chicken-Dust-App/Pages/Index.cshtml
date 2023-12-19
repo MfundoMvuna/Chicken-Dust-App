@@ -21,7 +21,7 @@
         </header>
 
         <main>
-    <h2>Select your chicken:</h2>
+    <h2>Select Your Chicken:</h2>
     <div class="product-cards">
         <div class="product-card">
             <div class="card-image">
@@ -30,7 +30,7 @@
             </div>
             <div class="card-description">
                 <h3>Quarter Chicken</h3>
-                <button onclick="showProductDetails('Quarter', 'Hot')">Select</button>
+                        <button onclick="showProductDetails('Quarter Chicken', 'Hot')">Select</button>
             </div>
         </div>
         <div class="product-card">
@@ -40,7 +40,7 @@
             </div>
             <div class="card-description">
                 <h3>Half Chicken</h3>
-                <button onclick="showProductDetails('Half', 'BBQ')">Select</button>
+                        <button onclick="showProductDetails('Half Chicken', 'BBQ')">Select</button>
             </div>
         </div>
         <div class="product-card">
@@ -50,7 +50,7 @@
             </div>
             <div class="card-description">
                 <h3>Full Chicken</h3>
-                <button onclick="showProductDetails('Full', 'BBQ')">Select</button>
+                <button onclick="showProductDetails('Full Chicken', 'BBQ')">Select</button>
             </div>
         </div>
         <!-- Add more product cards as needed -->
@@ -60,42 +60,68 @@
 
         <!-- Modal -->
         <div class="modal" id="orderModal">
-    <div class="product-card">
-        <div class="card-image">
-            <!-- Image for the selected product -->
-            <img id="productImage" src="" alt="Selected Product">
+            <div class="product-card">
+                <div class="card-image">
+                    <!-- Image for the selected product -->
+                    <img id="productImage" src="" alt="Selected Product">
+                </div>
+                <div class="card-description">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 id="productName"><span id="selectedProduct"></span></h2>
+                    <p class="modal-text">1 : <span id="selectedProductType"></span></p>
+                    <p class="modal-text">Sauce: <span id="selectedSauce"></span></p>
+                    <div class="sauce-options">
+                        <p class="modal-text">Select Sauce:</p>
+                        <label class="modal-text">
+                            <input type="radio" name="sauce" value="Hot" onclick="selectSauce('Hot')">
+                            Hot
+                        </label>
+                        <label class="modal-text">
+                            <input type="radio" name="sauce" value="BBQ" onclick="selectSauce('BBQ')">
+                            BBQ
+                        </label>
+                    </div>
+                    <button class="proceed-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+                </div>
+            </div>
         </div>
-        <div class="card-description">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="productName"><span id="selectedProduct"></span></h2>
-            <p>Selected: <span id="selectedProduct"></span></p>
-            <div class="sauce-options">
-    <p>Select Sauce:</p>
-    <label>
-        <input type="radio" name="sauce" value="Hot" onclick="selectSauce('Hot')">
-        Hot
-    </label>
-    <label>
-        <input type="radio" name="sauce" value="BBQ" onclick="selectSauce('BBQ')">
-        BBQ
-    </label>
-</div>
 
-            <button onclick="proceedToCheckout()">Proceed to Checkout</button>
-        </div>
-    </div>
-</div>
 
     </div>
 
     <script>
+        let selectedType = '';
+
         function showProductDetails(type, sauce) {
             // Update the modal content with selected product details
-            const selectedProduct = `${type} - ${sauce} Sauce`;
+            const selectedProduct = `${type}`;
             document.getElementById('selectedProduct').innerText = selectedProduct;
-            
+            document.getElementById('selectedProductType').innerText = `${type} - ${sauce} Sauce`;
+
             // Show the modal
             document.getElementById('orderModal').style.display = 'block';
+
+            // Update the image source based on the selected product
+            const productImage = document.getElementById('productImage');
+            if (type === 'Quarter Chicken') {
+                productImage.src = '/assets/quarter.jpg'; // Update with the correct path
+                productImage.alt = 'Quarter Chicken';
+            } else if (type === 'Half Chicken') {
+                productImage.src = '/assets/half.jpg'; // Update with the correct path
+                productImage.alt = 'Half Chicken';
+            } else if (type === 'Full Chicken') {
+                productImage.src = '/assets/full.jpg'; // Update with the correct path
+                productImage.alt = 'Full Chicken';
+            }
+
+            // Store the selected type globally
+            selectedType = type;
+        }
+
+        function selectSauce(sauce) {
+            // Update the selected sauce in the modal with the stored type
+            document.getElementById('selectedSauce').innerText = sauce;
+            document.getElementById('selectedProductType').innerText = `${selectedType} - ${sauce} Sauce`;
         }
 
         function closeModal() {
@@ -108,28 +134,7 @@
             // This function can redirect to the checkout page or perform necessary actions
             alert('Redirecting to checkout!');
         }
-function showProductDetails(type, sauce) {
-        // Update the modal content with selected product details
-        const selectedProduct = `${type} - ${sauce} Sauce`;
-        document.getElementById('selectedProduct').innerText = selectedProduct;
-        
-        // Show the modal
-        document.getElementById('orderModal').style.display = 'block';
-
-        // Update the image source based on the selected product
-        const productImage = document.getElementById('productImage');
-        if (type === 'Quarter') {
-            productImage.src = '/assets/quarter.jpg'; // Update with the correct path
-            productImage.alt = 'Quarter Chicken';
-        } else if (type === 'Half') {
-            productImage.src = '/assets/half.jpg'; // Update with the correct path
-            productImage.alt = 'Half Chicken';
-        } else if (type === 'Full') {
-            productImage.src = '/assets/full.jpg'; // Update with the correct path
-            productImage.alt = 'Full Chicken';
-        }
-    }
-
     </script>
+
 </body>
 </html>
