@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\Chicken-Dust-App.csproj": {}
+    "C:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\Chicken-Dust-App.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\Chicken-Dust-App.csproj": {
+    "C:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\Chicken-Dust-App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\Chicken-Dust-App.csproj",
+        "projectUniqueName": "C:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\Chicken-Dust-App.csproj",
         "projectName": "Chicken-Dust-App",
-        "projectPath": "c:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\Chicken-Dust-App.csproj",
+        "projectPath": "C:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\Chicken-Dust-App.csproj",
         "packagesPath": "C:\\Users\\Hi Fi\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\obj\\",
+        "outputPath": "C:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hi Fi\\AppData\\Roaming\\NuGet\\NuGet.Config",
