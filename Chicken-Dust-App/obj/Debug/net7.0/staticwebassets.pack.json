@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\Chicken-Dust-App.bundle.scp.css"
     },
     {
+      "Id": "c:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\wwwroot\\assets\\full.jpg",
+      "PackagePath": "staticwebassets\\assets\\full.jpg"
+    },
+    {
+      "Id": "c:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\wwwroot\\assets\\half.jpg",
+      "PackagePath": "staticwebassets\\assets\\half.jpg"
+    },
+    {
+      "Id": "c:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\wwwroot\\assets\\quarter.jpg",
+      "PackagePath": "staticwebassets\\assets\\quarter.jpg"
+    },
+    {
       "Id": "c:\\Users\\Hi Fi\\Documents\\project_Mfundo\\Chicken-Dust-App\\Chicken-Dust-App\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
