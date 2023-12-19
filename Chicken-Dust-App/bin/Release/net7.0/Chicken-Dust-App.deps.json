@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Chicken-Dust-App/1.0.0": {
+        "runtime": {
+          "Chicken-Dust-App.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Chicken-Dust-App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

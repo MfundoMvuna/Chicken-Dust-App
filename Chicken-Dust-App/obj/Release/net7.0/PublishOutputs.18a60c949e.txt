@@ -1,0 +1,7 @@
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\PubTmp\Out\Chicken-Dust-App.exe
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\PubTmp\Out\Chicken-Dust-App.dll
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\PubTmp\Out\Chicken-Dust-App.deps.json
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\PubTmp\Out\Chicken-Dust-App.runtimeconfig.json
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\PubTmp\Out\Chicken-Dust-App.pdb
