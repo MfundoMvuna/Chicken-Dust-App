@@ -7,4 +7,8 @@
     <RootNamespace>Chicken_Dust_App</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Chicken-Dust.BusLogic\Chicken-Dust.BusLogic.csproj" />
+  </ItemGroup>
+
 </Project>

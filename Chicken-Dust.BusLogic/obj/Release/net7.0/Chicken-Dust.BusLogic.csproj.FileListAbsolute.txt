@@ -1,0 +1,12 @@
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\obj\Release\net7.0\Chicken-Dust.BusLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\obj\Release\net7.0\Chicken-Dust.BusLogic.AssemblyInfoInputs.cache
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\obj\Release\net7.0\Chicken-Dust.BusLogic.AssemblyInfo.cs
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\obj\Release\net7.0\Chicken-Dust.BusLogic.csproj.CoreCompileInputs.cache
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\bin\Release\net7.0\Chicken-Dust.BusLogic.deps.json
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\bin\Release\net7.0\Chicken-Dust.BusLogic.dll
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\bin\Release\net7.0\Chicken-Dust.BusLogic.pdb
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\obj\Release\net7.0\Chicken-Dust.BusLogic.dll
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\obj\Release\net7.0\refint\Chicken-Dust.BusLogic.dll
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\obj\Release\net7.0\Chicken-Dust.BusLogic.pdb
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\obj\Release\net7.0\ref\Chicken-Dust.BusLogic.dll
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust.BusLogic\obj\Release\net7.0\Chicken-Dust.BusLogic.csproj.AssemblyReference.cache

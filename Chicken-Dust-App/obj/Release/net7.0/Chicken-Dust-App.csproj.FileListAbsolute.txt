@@ -28,3 +28,8 @@ C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Re
 C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\Chicken-Dust-App.pdb
 C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\Chicken-Dust-App.genruntimeconfig.cache
 C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\ref\Chicken-Dust-App.dll
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\bin\Release\net7.0\Newtonsoft.Json.dll
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\bin\Release\net7.0\Chicken-Dust.BusLogic.dll
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\bin\Release\net7.0\Chicken-Dust.BusLogic.pdb
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\Chicken-Dust-App.csproj.AssemblyReference.cache
+C:\Users\Hi Fi\Documents\project_Mfundo\Chicken-Dust-App\Chicken-Dust-App\obj\Release\net7.0\Chicken-Dust-App.csproj.CopyComplete

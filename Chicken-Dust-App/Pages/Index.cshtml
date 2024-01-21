@@ -14,7 +14,25 @@
     <!-- Link to Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z8J2Y8HBDK"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z8J2Y8HBDK');
+</script>
+
 <body>
+    <h1>Distance Result</h1>
+
+    <div>
+        <!-- Display the DistanceResult from ViewData -->
+        <p>@ViewData["DistanceResult"]</p>
+    </div>
+
     <div class="text-center">
         <header class="banner">
             <div class="logo">
@@ -79,7 +97,7 @@
                             Hot
                         </label>
                         <label class="modal-text">
-                            <input type="radio" name="sauce" value="BBQ" onclick="selectSauce('BBQ')">
+                            <input type="radio" name="sauce" value="BBQ" checked onclick="selectSauce('BBQ')">
                             BBQ
                         </label>
                     </div>
@@ -93,8 +111,11 @@
 
     <script>
         let selectedType = '';
+        let sauceType = '';
 
         function showProductDetails(type, sauce) {
+
+            document.getElementById('selectedSauce').innerText = 'BBQ';
             // Update the modal content with selected product details
             const selectedProduct = `${type}`;
             document.getElementById('selectedProduct').innerText = selectedProduct;
@@ -124,6 +145,8 @@
             // Update the selected sauce in the modal with the stored type
             document.getElementById('selectedSauce').innerText = sauce;
             document.getElementById('selectedProductType').innerText = `${selectedType} - ${sauce} Sauce`;
+
+            sauceType = sauce;
         }
 
         function closeModal() {
@@ -132,10 +155,29 @@
         }
 
         function proceedToCheckout() {
-            // Implement logic to proceed to checkout here
-            // This function can redirect to the checkout page or perform necessary actions
-            alert('Redirecting to checkout!');
+            // Retrieve and format order details
+            const orderDetails = `${selectedType} - ${sauceType}`;
+
+                // Send order details to WhatsApp
+                // sendOrderToWhatsApp(orderDetails);
         }
+        
+        function sendOrderToWhatsApp(orderDetails) {
+            // Format order details as needed
+            const formattedOrder = encodeURIComponent(orderDetails);
+            let whatsappLink = '';
+            if (sauceType == 'Hot') {
+                whatsappLink = `https://wa.me/27606829028?text=Loxion%20Chicken-Dust%20Order:%20${formattedOrder}🔥🔥🔥`;
+            }
+            else { 
+                // Construct WhatsApp link with the formatted order details
+                whatsappLink = `https://wa.me/27606829028?text=Loxion%20Chicken-Dust%20Order:%20${formattedOrder}`;
+            }
+
+            // Redirect to WhatsApp with the order information
+            window.open(whatsappLink, '_blank');
+        }
+
     </script>
 
 </body>

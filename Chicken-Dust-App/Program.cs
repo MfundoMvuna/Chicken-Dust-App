@@ -1,7 +1,15 @@
+using Chicken_Dust.BusLogic; // Import your namespaces
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+// Add your services here
+builder.Services.AddScoped<CalculateDistance>();
 
 var app = builder.Build();
 
