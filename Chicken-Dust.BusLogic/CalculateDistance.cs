@@ -27,7 +27,7 @@ namespace Chicken_Dust.BusLogic
                     // Assign the distance to the field if needed
                     // this.distance = distance;
 
-                    return $"It's {distance} meters away";
+                    return $"It's {distance} KM away";
                 }
                 else
                 {
@@ -36,10 +36,10 @@ namespace Chicken_Dust.BusLogic
             }
         }
 
-        public async Task<string> DistanceAway(string address, string location, string myaddress, string mylocale)
+        public async Task<string> DistanceAway(string address, string origins)
         {
             // Construct your Bing Maps API Distance Matrix request here
-            string apiUrl = $"https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins={myaddress}&destinations={address}&travelMode=driving&key={apiKey}";
+            string apiUrl = $"https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins={origins}&destinations={address}&travelMode=driving&key={apiKey}";
 
             using (HttpClient client = new HttpClient())
             {
@@ -49,12 +49,12 @@ namespace Chicken_Dust.BusLogic
                 {
                     // Parse the response and extract distance information
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    double distance = ParseDistanceFromJson(responseBody);
+                    double distance = ParseDistanceDuration(responseBody);
 
                     // Assign the distance to the field if needed
                     // this.distance = distance;
 
-                    return $"It's {distance} meters away";
+                    return $"It's {distance} minutes away";
                 }
                 else
                 {
@@ -91,6 +91,32 @@ namespace Chicken_Dust.BusLogic
                 throw new Exception("Error processing JSON response", ex);
             }
         }
+        private double ParseDistanceDuration(string jsonResponse)
+        {
+            // Implement logic to parse JSON and extract distance information
 
+            try
+            {
+                // Parse the JSON response using Newtonsoft.Json
+                dynamic json = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonResponse);
+
+                // Assuming the distance is in meters, you might need to navigate the JSON structure
+                // to find the appropriate field containing the distance information.
+                // This example assumes that the distance is in the 'resourceSets[0].resources[0].results[0].travelDistance' field.
+                double distance = json.resourceSets[0].resources[0].results[0].travelDuration;
+
+                return distance;
+            }
+            catch (Newtonsoft.Json.JsonException ex)
+            {
+                // Handle JSON parsing errors
+                throw new Exception("Error parsing JSON response", ex);
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions
+                throw new Exception("Error processing JSON response", ex);
+            }
+        }
     }
 }

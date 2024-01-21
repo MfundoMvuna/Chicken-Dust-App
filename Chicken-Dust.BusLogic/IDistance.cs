@@ -10,6 +10,6 @@ namespace Chicken_Dust.BusLogic
     {
         Task<string> Distance(string address, string origins);
 
-        Task<string> DistanceAway(string address, string location, string myaddress, string mylocale);
+        Task<string> DistanceAway(string address,string origins);
     }
 }

@@ -31,10 +31,11 @@ public class IndexModel : PageModel
         string apiUrl = $"https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins={origins}&destinations={destinations}&travelMode=driving&key={apiKey}";
 
         string result = await _calculateDistance.Distance(origins,destinations);
-
+        string distanceInTime = await _calculateDistance.DistanceAway(origins, destinations);
         //string result = await _calculateDistance.Distance(destinationAddress, destinationLocation, userAddress, userLocation);
 
         // Use the result as needed, for example, store it in ViewData
         ViewData["DistanceResult"] = result;
+        ViewData["DistanceTimeResult"] = distanceInTime;
     }
 }
